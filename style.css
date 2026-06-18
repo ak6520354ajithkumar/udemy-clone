@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
-    gap:10px;
+    gap: 10px;
     align-items: center;
     position: sticky;
     top: 0;
@@ -56,12 +56,12 @@ body {
     align-items: center;
 }
 
-.mylearning{
-position: relative;
-cursor: pointer;
+.mylearning {
+    position: relative;
+    cursor: pointer;
 }
 
-.mylearning__popup{
+.mylearning__popup {
     position: absolute;
     background-color: white;
     border: solid black 1px;
@@ -70,11 +70,11 @@ cursor: pointer;
     padding: 20px;
     right: 0;
     display: none;
-    
+
 }
 
-.mylearning:hover  .mylearning__popup{
-display: block;
+.mylearning:hover .mylearning__popup {
+    display: block;
 
 }
 
@@ -90,18 +90,31 @@ display: block;
 }
 
 .categerious p {
-    background-color: blue;
-    color: aliceblue;
-    padding: 20px;
+    background-color: #a435f0;
+    color: white;
+    padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid #a435f0 1px;
 }
 
-.sale-images{
+.categerious p:hover {
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border:solid #a435f0 1px;
+}
+
+
+
+
+
+.sale-images {
 
     position: relative;
 }
 
-.sale-images__offer{
+.sale-images__offer {
     width: 35%;
     border: solid black 2px;
     background-color: white;
@@ -109,6 +122,22 @@ display: block;
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .sale-images img {
@@ -116,7 +145,7 @@ display: block;
 }
 
 .recomented {
-    padding:1px;
+    padding: 1px;
     width: 100%;
     margin: 10px;
 }
@@ -131,17 +160,17 @@ display: block;
     width: 250px;
 }
 
-.course-card  img{
-width: 100%;
+.course-card img {
+    width: 100%;
 
 
 }
 
-.topics{
-    padding:1px;
+.topics {
+    padding: 1px;
 }
 
-.topics__container{
+.topics__container {
 
     display: flex;
     gap: 10px;
@@ -149,41 +178,42 @@ width: 100%;
     flex-wrap: wrap;
 }
 
-.topics__container  p{
-   border: solid gray 10px;
-   padding: 10px;
-   flex-grow:1:
-   flex flex-basis: 30%;
-   
+.topics__container p {
+    border: solid gray 10px;
+    padding: 10px;
+    flex-grow: 1;
+    flex flex-basis: 30%;
+
 }
 
-.popular{
-    padding:1px;
+.popular {
+    padding: 1px;
 }
 
-.popular__container{
+.popular__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.footer{
+.footer {
     padding: 10px;
     background-color: black;
     color: white;
-    
+
 }
 
-.footer  p{
+.footer p {
     margin: 20px;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
 }
 
 
-.footer__two{
+.footer__two {
     display: flex;
     justify-content: space-between;
     margin: 20px;
